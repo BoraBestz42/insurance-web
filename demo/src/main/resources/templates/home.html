@@ -1,0 +1,229 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="th" xmlns:th="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>หน้า Home - ประกันทุกย่างก้าว</title>-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">-->
+<!--    <style>-->
+<!--    .section-title {-->
+<!--      font-size: 2rem;-->
+<!--      margin-bottom: 20px;-->
+<!--      font-weight: bold;-->
+<!--      color: #333;-->
+<!--    }-->
+
+<!--    .insurance-description {-->
+<!--      font-size: 1.1rem;-->
+<!--      line-height: 1.6;-->
+<!--      color: #555;-->
+<!--    }-->
+
+<!--    .insurance-section {-->
+<!--      padding: 40px;-->
+<!--      background-color: #f8f9fa;-->
+<!--      margin-bottom: 30px;-->
+<!--      border-radius: 10px;-->
+<!--      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);-->
+<!--    }-->
+<!--  </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--    <div class="container-fluid">-->
+<!--        <a class="navbar-brand" th:href="@{/home}" th:text="${nameShop}"></a>-->
+<!--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--            <span class="navbar-toggler-icon"></span>-->
+<!--        </button>-->
+<!--        <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--            <ul class="navbar-nav">-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link active" aria-current="page" th:href="@{/home}">Home</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" th:href="@{/shop}">Shop</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
+
+<!--<div class="container mt-5">-->
+<!--    <div class="insurance-section">-->
+<!--        <h2 class="section-title">ประกันชีวิต</h2>-->
+<!--        <p class="insurance-description">-->
+<!--            ประกันชีวิตคือการที่ผู้เอาประกันจ่ายเบี้ยประกันให้กับบริษัทประกันเพื่อแลกกับการรับความคุ้มครองทางการเงินในกรณีที่ผู้เอาประกันเสียชีวิต โดยจะมีการจ่ายผลประโยชน์ให้กับครอบครัวหรือบุคคลที่ผู้เอาประกันเลือกไว้เป็นผู้รับผลประโยชน์ในกรณีที่เสียชีวิตจากอุบัติเหตุ หรือโรคภัยไข้เจ็บต่าง ๆ-->
+<!--        </p>-->
+<!--    </div>-->
+
+<!--    <div class="insurance-section">-->
+<!--        <h2 class="section-title">ประกันอุบัติเหตุ</h2>-->
+<!--        <p class="insurance-description">-->
+<!--            ประกันอุบัติเหตุเป็นประกันที่ให้ความคุ้มครองแก่ผู้เอาประกันในกรณีที่เกิดอุบัติเหตุไม่ว่าจะเป็นอุบัติเหตุจากการทำงาน การเดินทาง หรือกิจกรรมต่าง ๆ โดยจะจ่ายเงินชดเชยในกรณีที่เกิดการบาดเจ็บ สูญเสียอวัยวะ หรือเสียชีวิตจากอุบัติเหตุ-->
+<!--        </p>-->
+<!--    </div>-->
+
+<!--    <div class="insurance-section">-->
+<!--        <h2 class="section-title">ประกันสุขภาพ</h2>-->
+<!--        <p class="insurance-description">-->
+<!--            ประกันสุขภาพคือการคุ้มครองค่าใช้จ่ายในการรักษาพยาบาลในกรณีที่ผู้เอาประกันเจ็บป่วย หรือได้รับการรักษาทางการแพทย์ที่จำเป็น เช่น การรักษาโรคทั่วไป การผ่าตัด หรือการรักษาพยาบาลในโรงพยาบาล บริษัทประกันจะจ่ายค่าใช้จ่ายต่าง ๆ ตามที่กำหนดในกรมธรรม์-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div th:if="${message != null}" style="color: green; font-weight: bold;">-->
+<!--    <p th:text="${message}"></p>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+
+<!--<head>-->
+<!--    <title>HTTP Status 400 – Bad Request</title>-->
+<!--    <style type="text/css">-->
+<!--		body {-->
+<!--			font-family: Tahoma, Arial, sans-serif;-->
+<!--		}-->
+
+<!--		h1,-->
+<!--		h2,-->
+<!--		h3,-->
+<!--		b {-->
+<!--			color: white;-->
+<!--			background-color: #525D76;-->
+<!--		}-->
+
+<!--		h1 {-->
+<!--			font-size: 22px;-->
+<!--		}-->
+
+<!--		h2 {-->
+<!--			font-size: 16px;-->
+<!--		}-->
+
+<!--		h3 {-->
+<!--			font-size: 14px;-->
+<!--		}-->
+
+<!--		p {-->
+<!--			font-size: 12px;-->
+<!--		}-->
+
+<!--		a {-->
+<!--			color: black;-->
+<!--		}-->
+
+<!--		.line {-->
+<!--			height: 1px;-->
+<!--			background-color: #525D76;-->
+<!--			border: none;-->
+<!--		}-->
+<!--	</style>-->
+<!--</head>-->
+
+<!--<body>-->
+<!--<h1>HTTP Status 400 – Bad Request</h1>-->
+<!--</body>-->
+
+<!--</html>-->
+
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <title>HTTP Status 400 – Bad Request</title>-->
+<!--    <style type="text/css">-->
+<!--            body {-->
+<!--                font-family: Tahoma,Arial,sans-serif;-->
+<!--            }-->
+
+<!--            h1, h2, h3, b {-->
+<!--                color: white;-->
+<!--                background-color: #525D76;-->
+<!--            }-->
+
+<!--            h1 {-->
+<!--                font-size: 22px;-->
+<!--            }-->
+
+<!--            h2 {-->
+<!--                font-size: 16px;-->
+<!--            }-->
+
+<!--            h3 {-->
+<!--                font-size: 14px;-->
+<!--            }-->
+
+<!--            p {-->
+<!--                font-size: 12px;-->
+<!--            }-->
+
+<!--            a {-->
+<!--                color: black;-->
+<!--            }-->
+
+<!--            .line {-->
+<!--                height: 1px;-->
+<!--                background-color: #525D76;-->
+<!--                border: none;-->
+<!--            }-->
+<!--        </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>HTTP Status 400 – Bad Request</h1>-->
+<!--</body>-->
+<!--</html>-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>HTTP Status 400 – Bad Request</title>
+    <style type="text/css">
+		body {
+			font-family: Tahoma, Arial, sans-serif;
+		}
+
+		h1,
+		h2,
+		h3,
+		b {
+			color: white;
+			background-color: #525D76;
+		}
+
+		h1 {
+			font-size: 22px;
+		}
+
+		h2 {
+			font-size: 16px;
+		}
+
+		h3 {
+			font-size: 14px;
+		}
+
+		p {
+			font-size: 12px;
+		}
+
+		a {
+			color: black;
+		}
+
+		.line {
+			height: 1px;
+			background-color: #525D76;
+			border: none;
+		}
+	</style>
+</head>
+
+<body>
+<h1>HTTP Status 400 – Bad Request</h1>
+</body>
+
+</html>
